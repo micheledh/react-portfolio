@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": [
+    "babel", "import", "prettier", "react"
+  ],
+  "rules": {
+    "prettier/prettier" : [
+      "error",
+      {
+        "printWidth": 120,
+        "tabWidth": 4,
+        "bracketSpacing": false,
+        "parser": "babylon",
+        "trailingComma": "none",
+        "singleQuote": true
+      }
+    ],
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/first": "off",
+    "import/extensions": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off"
+  },
+  "extends": ["airbnb", "prettier"]
+}

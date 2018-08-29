@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: inset 0 -5px 10px 0 rgba(0,0,0,0.25);
+  background-color: #E89D77;
+  position: relative;
+}
+
+.logo {
+  margin: auto auto auto 10px;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 40px;
+}
+
+.navHeader {
+  text-align: center;
+  display: flex;
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.navCat {
+  margin: auto;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navCat:first-child {
+  border-right: solid 3px #E5936B;
+  padding-right: 15%;
+}
+
+.navCat:last-child {
+  border-left: solid 3px #E5936B;
+  padding-left: 15%;
+}

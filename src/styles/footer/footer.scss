@@ -1,0 +1,23 @@
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E89D77;
+  box-shadow: inset 0 5px 10px 0 rgba(0,0,0,0.25);
+}
+
+.copyright {
+  margin-left: 5px;
+}
+
+.contactLinks {
+  margin-right: 5px;
+  display: flex;
+}
+
+.link {
+  margin-right: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
