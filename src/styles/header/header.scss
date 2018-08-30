@@ -12,6 +12,8 @@
   margin: auto auto auto 10px;
   font-family: 'Berkshire Swash', cursive;
   font-size: 40px;
+  color: black;
+  text-decoration: none;
 }
 
 .navHeader {
@@ -26,6 +28,8 @@
 
 .navCat {
   margin: auto;
+  color: black;
+  text-decoration: none;
   &:hover {
     cursor: pointer;
   }
