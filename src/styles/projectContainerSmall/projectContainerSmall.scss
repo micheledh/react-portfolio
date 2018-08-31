@@ -1,7 +1,6 @@
 .project {
   border: 1px solid #8FA572;
   border-radius: 5%;
-  width: 40%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -20,4 +19,8 @@
 
 .projectTitle, .projectDescription {
   margin: 10px;
+}
+
+.linkToProjectPage {
+  text-decoration: none;
 }

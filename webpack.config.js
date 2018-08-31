@@ -1,15 +1,14 @@
-
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
-    template: "./src/index.html",
-    filename: "./index.html"
+    template: './src/index.html',
+    filename: './index.html'
 });
 
 const miniCssExtractPlugin = new MiniCssExtractPlugin({
-    filename: "[name].css",
-    chunkFilename: "[id].css"
+    filename: '[name].css',
+    chunkFilename: '[id].css'
 });
 
 module.exports = {
@@ -18,10 +17,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: [
-                    "babel-loader",
-                    "eslint-loader"
-                ]
+                use: ['babel-loader', 'eslint-loader']
             },
             {
                 test: /\.css$/,
@@ -52,20 +48,20 @@ module.exports = {
                         }
                     },
                     {
-                        loader: "css-loader",
+                        loader: 'css-loader',
                         options: {
                             modules: true,
                             importLoaders: 2,
-                            localIdentName: "[name]_[local]_[hash:base64]",
+                            localIdentName: '[name]_[local]_[hash:base64]',
                             sourceMap: true,
                             minimize: true
                         }
                     },
                     {
-                        loader: "sass-loader"
+                        loader: 'sass-loader'
                     },
                     {
-                        loader: "postcss-loader",
+                        loader: 'postcss-loader',
                         options: {
                             plugins: () => [require('autoprefixer')]
                         }
@@ -79,7 +75,7 @@ module.exports = {
                         loader: 'file-loader'
                     }
                 ]
-            },
+            }
         ]
     },
     plugins: [htmlWebpackPlugin, miniCssExtractPlugin]

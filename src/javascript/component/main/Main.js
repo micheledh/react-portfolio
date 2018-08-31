@@ -6,7 +6,7 @@ import ProjectContainerSmall from '../projectContainerSmall/ProjectContainerSmal
 
 import styles from '../../../styles/main/main.scss';
 import arrowDown from '../../../images/arrowDown.png';
-import Texts from '../../constant/texts';
+import ProjectsData from '../../constant/ProjectsData';
 
 export default class Main extends Component {
     scrollToProjects() {
@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
 
     render() {
-      const projectsArray = Object.keys(Texts).map(key => Texts[key]);
+      const projectsArray = Array.from(ProjectsData);
         return (
             <main className={styles.main}>
                 <div className={styles.backgroundImg}>
@@ -29,7 +29,7 @@ export default class Main extends Component {
                 </div>
 
               <div className={styles.projects} id="projectsContainer">
-                {projectsArray.map(project => <ProjectContainerSmall key={project.title} project={project} />)}
+                {projectsArray.map(project => <ProjectContainerSmall key={project[1].id} project={project[1]} />)}
               </div>
 
             </main>
