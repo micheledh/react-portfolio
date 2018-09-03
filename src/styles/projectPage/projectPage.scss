@@ -1,6 +1,7 @@
+@import '../variables.scss';
+
 .projectPageBody {
-  background-color: #8FA670;
-  height: 100%;
+  background-color: $greenProjectPage;
 }
 
 .projectTitle {
@@ -16,7 +17,7 @@
 }
 
 .projectDescription {
-  margin: 50px;
+  margin: 15px;
 }
 
 .skillsList {
@@ -26,10 +27,20 @@
 
 .linkToWebsite {
   text-decoration: none;
-  color: black;
+  color: $black;
   line-height: 70px;
   font-size: 25px;
   font-style: italic;
   display: block;
   text-align: center;
+}
+
+
+@media only screen and (min-width: $widthMedium) {
+  .projectPageBody {
+    height: 100%;
+  }
+  .projectDescription {
+    margin: 50px;
+  }
 }

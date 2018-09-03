@@ -1,13 +1,15 @@
+@import '../variables.scss';
+
 .contactBody {
-  background-color: #F3D796;
+  background-color: $yellowLight;
   text-align: center;
   height: 100%;
+  padding: 10px;
 }
 
 .contactTitle {
-  margin: 0;
-  padding: 20px;
-  font-size: 35px;
+  margin: $marginTitle;
+  font-size: $fontSizeTitle;
 }
 
 .name {
@@ -15,13 +17,13 @@
 }
 
 .email {
-  font-size: 20px;
+  font-size: 16px;
   margin: 40px;
 }
 
 .link {
   text-decoration: none;
-  color: black;
+  color: $black;
   margin: 10px;
 }
 
@@ -29,4 +31,10 @@
   margin: 50px;
   font-size: 25px;
   font-style: italic;
+}
+
+@media only screen and (min-width: $widthMedium) {
+  .email {
+    font-size: 20px;
+  }
 }

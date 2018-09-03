@@ -14,7 +14,7 @@ export default class Header extends Component {
 
             <nav className={styles.navHeader}>
                 <Link to="/about" className={styles.navCat}>About</Link>
-                <Link to="/projects" className={styles.navCat}>Projects</Link>
+                <Link to="/projects" className={styles.navCat + ' ' + styles.middleCat}>Projects</Link>
                 <Link to="/contact" className={styles.navCat}>Contact</Link>
 
             </nav>

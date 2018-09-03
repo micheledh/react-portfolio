@@ -1,12 +1,15 @@
+@import '../variables.scss';
+
 .projectsListBody {
-  background-color: #8FA670;
+  background-color: $greenProjectList;
   text-align: center;
   height: 100%;
+  padding: 10px;
 }
 
 .projectsListTitle {
-  margin: 0;
-  padding: 10px;
+  margin: $marginTitle;
+  font-size: $fontSizeTitle;
 }
 
 .projectsList {
@@ -16,5 +19,5 @@
 
 .linkToProjectPage {
   text-decoration: none;
-  color: black;
+  color: $black;
 }

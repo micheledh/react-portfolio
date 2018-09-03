@@ -1,13 +1,15 @@
+@import '../variables.scss';
+
 .project {
-  border: 1px solid #8FA572;
+  border: 1px solid $greenLightBorder;
   border-radius: 5%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
   margin: 20px;
   min-width: 250px;
-  background-color: #0F3F40;
-  color: white;
+  background-color: $greenProjectBackground;
+  color: $white;
 }
 
 .projectImg {
