@@ -4,7 +4,7 @@ import App from './App';
 
 export default function AppRouter() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <App />
         </BrowserRouter>
     );

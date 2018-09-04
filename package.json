@@ -2,12 +2,9 @@
   "name": "portfolio2",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://micheledh.github.io/react-portfolio/",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --mode production"
   },
   "license": "MIT",
   "devDependencies": {
@@ -39,7 +36,6 @@
     "eslint-plugin-prettier": "^2.6.1",
     "eslint-plugin-react": "^7.10.0",
     "file-loader": "^1.1.11",
-    "gh-pages": "^1.2.0",
     "mobx-react": "^5.2.3",
     "prettier": "^1.13.6",
     "prop-types": "^15.6.2",
