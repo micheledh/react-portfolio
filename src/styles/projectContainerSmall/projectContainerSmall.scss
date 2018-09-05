@@ -25,4 +25,7 @@
 
 .linkToProjectPage {
   text-decoration: none;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
