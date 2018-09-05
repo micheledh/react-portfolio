@@ -30,6 +30,9 @@
 .hr {
   width: 50%;
   margin: 40px auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, $orangeLightHr, $orangeBorderCat, $orangeLightHr);
 }
 
 
