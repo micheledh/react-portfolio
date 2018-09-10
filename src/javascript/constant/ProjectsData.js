@@ -59,7 +59,7 @@ const smallProjects = {
     link: [
         ['Blog redux', 'https://github.com/micheledh/blog-react-redux'],
         ['Nutella', 'https://micheledh.github.io/nutella/'],
-        ['Aracde game', 'https://micheledh.github.io/arcade_game/']
+        ['Arcade game', 'https://micheledh.github.io/arcade_game/']
     ]
 };
 
