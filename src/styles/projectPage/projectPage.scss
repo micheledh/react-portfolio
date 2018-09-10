@@ -1,7 +1,8 @@
 @import '../variables.scss';
 
 .projectPageBody {
-  background-color: $greenProjectPage;
+  background-color: $orangeLight;
+  width: 90%;
 }
 
 .projectTitle {
@@ -34,8 +35,7 @@
   display: block;
   text-align: center;
   &:hover {
-    font-size: 28px;
-    font-weight: bold;
+    transform: scale(1.2);
   }
 }
 

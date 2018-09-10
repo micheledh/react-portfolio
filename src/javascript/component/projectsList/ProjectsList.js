@@ -10,7 +10,7 @@ export default function ProjectsList() {
             <h1 className={styles.projectsListTitle}>Projects done</h1>
             <ul className={styles.projectsList}>
                 {projects.map(project => (
-                    <li key={project[1].id}>
+                    <li key={project[1].id} className={styles.projectsListItem}>
                         <Link to={`/${project[1].id}`} className={styles.linkToProjectPage}>
                             {project[1].title}
                         </Link>

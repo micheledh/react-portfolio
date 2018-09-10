@@ -1,113 +1,12 @@
 @import '../variables.scss';
 
-.main {
-  background-color: $purpleBackground;
-}
-
-.backgroundImg {
-  height: calc(100vh - #{$footerHeight});
-  width: 100%;
-  background-image: url("../../images/kale-salad.jpg");
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.projectsTitle {
+  margin: 80px;
   text-align: center;
-  justify-content: space-around;
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.checkContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  margin-bottom: 15px;
-  background-color: inherit;
-  border: none;
-  &:hover {
-    cursor: pointer;
-    font-weight: bold;
-    transform: scale(1.2) translate(-40%);
-  }
-}
-
-.homepageTitle {
-  font-size: 30px;
-}
-
-.freeQuote {
-  border: solid 1px;
-  border-radius: 15%;
-  height: 40px;
-  width: 160px;
-  margin: 30px auto;
-  line-height: 40px;
-  font-size: 17px;
-  color: $white;
-  text-decoration: none;
-  &:hover {
-    cursor: pointer;
-    font-weight: bold;
-    transform: scale(1.2);
-  }
-}
-
-.checkWork {
-  color: $white;
-  font-size: 20px;
-}
-
-.downArrow {
-  width: 50px;
-  height: 30px;
-  margin: 5px auto;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.project {
-  border: 1px solid $greenLightBorder;
-  border-radius: 5%;
-  width: 40%;
-  max-width: 450px;
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  min-width: 250px;
-  background-color: $greenProjectBackground;
-  color: $white;
-}
-
-.projectImg {
-  width: 90%;
-  max-height: 300px;
-  align-self: center;
-  margin: 5px;
-}
-
-.projectTitle, .projectDescription {
-  margin: 10px;
-}
-
-@media only screen and (min-width: $widthMedium) {
-  .titleContainer {
-    top: 20%;
-  }
-  .freeQuote {
-    color: $black;
-  }
 }

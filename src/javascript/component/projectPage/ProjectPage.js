@@ -13,9 +13,17 @@ export default function ProjectPage(props) {
             <p className={styles.projectDescription}>{data.descriptionDetailed}</p>
             <h3 className={styles.titleCat}>Skills / knowledge used</h3>
             <ul className={styles.skillsList}>{data.skills.map(skill => <li key={skill}>{skill}</li>)}</ul>
-            <a href={data.link} target="_blank" rel="noopener noreferrer" className={styles.linkToWebsite}>
-                Check it !
-            </a>
+            {data.link.map(link => (
+                <a
+                    key={link[0]}
+                    href={link[1]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkToWebsite}
+                >
+                    Check {link[0]} !
+                </a>
+            ))}
         </div>
     );
 }

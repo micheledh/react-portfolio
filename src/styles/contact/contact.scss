@@ -1,10 +1,9 @@
 @import '../variables.scss';
 
 .contactBody {
-  background-color: $yellowLight;
+  width: 90%;
   text-align: center;
-  height: 100%;
-  padding: 10px;
+  background-color: $orangeLight;
 }
 
 .contactTitle {
@@ -18,13 +17,21 @@
 
 .email {
   font-size: 16px;
-  margin: 40px;
+  margin: 17px;
+  text-decoration: none;
+  color: $black;
 }
 
 .link {
   text-decoration: none;
   color: $black;
   margin: 10px;
+}
+
+.contactLink {
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .quote {
@@ -36,5 +43,6 @@
 @media only screen and (min-width: $widthMedium) {
   .email {
     font-size: 20px;
+    margin: 40px;
   }
 }

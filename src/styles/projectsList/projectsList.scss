@@ -1,10 +1,9 @@
 @import '../variables.scss';
 
 .projectsListBody {
-  background-color: $greenProjectList;
+  width: 90%;
   text-align: center;
-  height: 100%;
-  padding: 10px;
+  background-color: $orangeLight;
 }
 
 .projectsListTitle {
@@ -15,13 +14,16 @@
 .projectsList {
   margin: 0;
   padding: 30px;
+  list-style-position: inside;
+}
+
+.projectsListItem {
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .linkToProjectPage {
   text-decoration: none;
   color: $black;
-  &:hover {
-    font-size: 16px;
-    font-weight: bold;
-  }
 }

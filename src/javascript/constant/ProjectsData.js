@@ -26,7 +26,7 @@ const derbyshireGroup = {
         'Fetch',
         'Flow'
     ],
-    link: 'https://derbyshire-group.com/'
+    link: [['Derbyshire Group', 'https://derbyshire-group.com/']]
 };
 
 projectsData.set(derbyshireGroup.id, derbyshireGroup);
@@ -40,7 +40,7 @@ const dansMaCuisine = {
     descriptionDetailed:
         "Dans ma cuisine is a personal project, a responsive recipe website, to keep training, helped by an experienced developer. The recipes are sorted by type (starters, mains, desserts...), but you can also search for them by keyword (name of the recipe, ingredient, type like sauce, vegetarian...). All the website can be translated into French or English. In the long term, I hope I'll have enough time to put in there all my recipes, so I can have them with me everywhere I go. More info on Github",
     skills: ['HTML5', 'CSS3', 'ES6', 'SASS', 'React', 'React-router', 'Webpack', 'Mobx', 'Intl', 'Lunr'],
-    link: 'https://github.com/micheledh/dans-ma-cuisine'
+    link: [['Dans ma cuisine', 'https://github.com/micheledh/dans-ma-cuisine']]
 };
 
 projectsData.set(dansMaCuisine.id, dansMaCuisine);
@@ -56,7 +56,11 @@ const smallProjects = {
         'The Nutella project was a personal project, given by an experienced developer to train me on css. The goal was to build a nutella jar, with a lid moving when being hovered, all thanks to css.\n' +
         'The arcade game was a project within the Front-end Nanodegree. Images and basic code were given, but I had to use Javascript to have the game displayed and to make it followed the rules (win/lose rules, moves allowed or not...).',
     skills: ['HTML5', 'CSS3', 'ES6', 'SASS', 'React', 'Webpack', 'Redux', 'Fetch'],
-    link: 'https://github.com/micheledh?tab=repositories'
+    link: [
+        ['Blog redux', 'https://github.com/micheledh/blog-react-redux'],
+        ['Nutella', 'https://micheledh.github.io/nutella/'],
+        ['Aracde game', 'https://micheledh.github.io/arcade_game/']
+    ]
 };
 
 projectsData.set(smallProjects.id, smallProjects);

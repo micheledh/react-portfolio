@@ -1,6 +1,12 @@
+@import 'variables.scss';
+
 body, html {
   margin: 0;
   padding: 0;
+  border: 0;
+  font: 100% inherit;
+  vertical-align: baseline;
+  background-color: $greyF2;
 }
 
 * {
@@ -8,6 +14,8 @@ body, html {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }

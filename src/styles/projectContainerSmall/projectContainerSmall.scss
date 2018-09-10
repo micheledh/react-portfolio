@@ -1,15 +1,14 @@
 @import '../variables.scss';
 
 .project {
-  border: 1px solid $greenLightBorder;
-  border-radius: 5%;
-  max-width: 450px;
+  border: 3px solid #DD614A;
+  border-radius: 20px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   margin: 20px;
   min-width: 250px;
-  background-color: $greenProjectBackground;
-  color: $white;
+  height: 580px;
 }
 
 .projectImg {
@@ -23,8 +22,13 @@
   margin: 10px;
 }
 
+.projectTitle {
+  color: #DD614A;
+}
+
 .linkToProjectPage {
   text-decoration: none;
+  color: black;
   &:hover {
     transform: scale(1.1);
   }

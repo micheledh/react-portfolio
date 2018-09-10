@@ -1,56 +1,42 @@
 @import '../variables.scss';
 
 .header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  box-shadow: inset 0 -5px 10px 0 rgba(0,0,0,0.25);
-  background-color: $orangeBright;
+  background-color: $white;
+  width: 90%;
+  height: 300px;
+  text-align: center;
   position: relative;
 }
 
-.logo {
-  margin: auto auto auto 10px;
-  font-family: 'Berkshire Swash', cursive;
-  font-size: 40px;
-  color: $black;
+.headerTitleDiv {
   text-decoration: none;
-  &:hover {
-    transform: scale(1.1);
-  }
+  color: black;
 }
 
-.navHeader {
-  text-align: center;
-  display: flex;
-  width: 40%;
+.headerMainTitle {
+  font-size: 40px;
+}
+
+.headerSubTitle {
+  font-size: 30px;
+}
+
+.nav {
+  background-color: #DD614A;
+  height: 60px;
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%);
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 60px;
+  font-size: 20px;
 }
 
 .navCat {
-  margin: auto;
-  color: $black;
   text-decoration: none;
+  color: white;
   &:hover {
-    cursor: pointer;
     transform: scale(1.2);
-  }
 }
-
-.navCat:first-child {
-  border-right: solid 3px $orangeBorderCat;
-  padding-right: 5%;
-}
-
-.navCat:last-child {
-  border-left: solid 3px $orangeBorderCat;
-  padding-left: 5%;
-}
-
-.middleCat {
-  margin: auto 5%;
 }

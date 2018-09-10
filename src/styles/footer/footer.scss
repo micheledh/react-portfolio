@@ -1,41 +1,35 @@
 @import '../variables.scss';
 
 .footer {
-  min-height: $footerHeight;
-  display: flex;
-  justify-content: space-between;
-  background-color: $orangeBright;
-  box-shadow: inset 0 5px 10px 0 rgba(0,0,0,0.25);
+  margin-top: auto;
+  color: #DD614A;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .copyright {
-  margin-left: 5px;
   font-size: 10px;
 }
 
 .contactLinks {
-  margin-right: 15px;
   display: flex;
-  font-size: 15px;
-  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-evenly;
 }
 
 .link {
   margin-right: 5px;
-  color: $black;
+  color: #DD614A;
   text-decoration: none;
   &:hover {
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
+    transform: scale(1.2);
   }
 }
 
 @media only screen and (min-width: $widthMedium) {
   .copyright {
     font-size: 14px;
-  }
-  .contactLinks {
-    flex-direction: row;
   }
 }
