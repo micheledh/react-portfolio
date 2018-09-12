@@ -1,9 +1,3 @@
-# How to run
+# How to access
 
-First clone the repo.
-
-To run this app (after yarn install at least once):
-
-yarn start to run dev server
-
-yarn run build to bundle
+Please find the portfolio at https://portfolio-micheledh.firebaseapp.com/
