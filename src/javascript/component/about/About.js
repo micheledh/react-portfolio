@@ -27,9 +27,11 @@ export default function About() {
                 <li>JQuery, Ajax/Fetch, React</li>
                 <li>SASS, Webpack, Redux, Mobx, Intl, Flow, React-router</li>
                 <li>Git, Github, Jira, Bitbucket, Slack, Gimp</li>
+                <li>Automation (RPA UiPath)</li>
                 <br />
                 <li>Quick learning curve, willing to learn</li>
                 <li>Working alone/team, working remotely</li>
+                <li>Agile</li>
             </ul>
             <hr className={styles.hr} />
             <h3 className={styles.listTitle}>Education</h3>

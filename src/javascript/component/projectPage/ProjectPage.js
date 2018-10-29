@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ListCard from '../listCard/ListCard';
 import ProjectsData from '../../constant/ProjectsData';
 import styles from '../../../styles/projectPage/projectPage.scss';
 
@@ -11,8 +12,7 @@ export default function ProjectPage(props) {
             <h1 className={styles.projectTitle}>{data.title}</h1>
             <h3 className={styles.titleCat}>Description of project</h3>
             <p className={styles.projectDescription}>{data.descriptionDetailed}</p>
-            <h3 className={styles.titleCat}>Skills / knowledge used</h3>
-            <ul className={styles.skillsList}>{data.skills.map(skill => <li key={skill}>{skill}</li>)}</ul>
+            <ListCard {...data} />
             {data.link.map(link => (
                 <a
                     key={link[0]}

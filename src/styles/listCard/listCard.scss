@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.listCard {
+  width: 35%;
+  margin: 0 auto;
+  border: thin solid rgba(51,122,183,.1);
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #d3d3d3;
+  background-color: #fff;
+}
+
+.titleCat {
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.listCardRule {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, $orangeLightHr, $orangeBorderCat, $orangeLightHr);
+}
+
+.skillsList {
+  list-style-type: none;
+  padding-left: 10%;
+}
